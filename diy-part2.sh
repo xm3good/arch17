@@ -12,3 +12,7 @@
 
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+
+# Add luci-app-adguardhome
+cp -r temp/luci/applications/luci-app-adguardhome luci/applications/luci-app-adguardhome
+cp -r temp/packages/net/adguardhome packages/net/adguardhome
